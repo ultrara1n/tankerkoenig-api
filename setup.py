@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pytankerkoenig",
-    version="0.0.1",
+    version="0.0.2",
     author="Philipp Wensauer",
     author_email="mail@philippwensauer.com",
     description="Library for Tankerönig.de JSON API",
