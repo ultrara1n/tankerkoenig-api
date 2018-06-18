@@ -11,3 +11,10 @@ python:
 
 script:
   python test.py
+
+deploy:
+  provider: pypi
+  user: "$pypiuser"
+  password: "$pypipassword"
+  on:
+    tags: true
