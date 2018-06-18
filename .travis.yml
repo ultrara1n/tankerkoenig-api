@@ -13,7 +13,8 @@ script:
 
 deploy:
   provider: pypi
-  user: "$pypiuser"
-  password: "$pypipassword"
+  user: "ultrara1n"
+  password:
+      secure: "Rh+gvckhT6s7WSioF10r/Y0wnBG+dFV8mZA6U1/tD52Bnrj6k029i1ZetJUYDDuvlsBBsG1PSwyZNSq9o2krGR5qLcaniRFAy18fd6sqGfidiaKCDfN2kczogb11m3WRhFQ1fEVUyHlevHAan0+BYFsQAtk79k4YJ3h0I5JQJWEckGiSfmpaQ1N/DYANPZ4D0O2z9CrVsL3p2mPEgtlUPpkH9hV7E+9SvMCZWb6IBsYgIYMohUp7CeAV3Ybfjw9If8Tdg5YCcHZSvtQLtL0TooLc2VrBqM3SUe6AMDEkSxY1UtnwgG7Nem1vYrsqJRxKtAsH4Db54wzycaIuLQjcfVJKfwEde8UA+W+zU235K6jtfxGSnwTE3gCaGQ+8SGUCiCQQhN6WKlw7vfF8P45B6NL7Wscope0ewm7W45MBkeqDluPG69yKn3cNRGSzg7MrcnMU3zLopMSnW8CCEJXIoKh42NBokj1I5nnAq93nBdVw3HNPmmEsM2hXvyJ/fzbYf7LBmBNzh6IdWz5FGqJx33UemDM2v5eE9PXHFcTC6Df/tCylvyoSpQc79cwr2tHI44Fls4h3lfKadH6H/Oz17gAzG+e/266u5MheT6Bw5oHc27IHjilcucVl2PZ8fbAxiti15C6xmUYWzjK32+eFVneRcxW++o4QSI+zSnrqBn4="
   on:
     tags: true
