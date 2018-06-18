@@ -1,1 +1,3 @@
-import tankerkoenig-api
+import pytankerkoenig
+
+print("Hello World!")
