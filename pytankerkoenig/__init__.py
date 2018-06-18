@@ -16,5 +16,3 @@ def getStationData(apikey, station):
     stationJSON = json.loads(stationResponse.read().decode(encoding))
 
     return stationJSON
-
-def getNearbyStations():
