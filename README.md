@@ -3,3 +3,48 @@
 [![](https://img.shields.io/pypi/v/pytankerkoenig.svg)](https://pypi.org/project/pytankerkoenig/)
 
 Python package for fuel data from tankerkoenig.de
+
+## Prerequisites
+You need to request an API-Key here: https://creativecommons.tankerkoenig.de.
+
+For station details, find the station id via this tool: https://creativecommons.tankerkoenig.de/TankstellenFinder/index.html
+## Installation
+```bash
+$ pip install pytankerkoenig
+```
+## Use
+### getStationData(API_KEY, STATION_ID)
+```python
+>>> import pytankerkoenig
+>>> data = pytankerkoenig.getStationData('00000000-0000-0000-0000-000000000002', '24a381e3-0d72-416d-bfd8-b2f65f6e5802')
+>>> print(data)
+{
+    'ok': True,
+    'license': 'CC BY 4.0 -  https://creativecommons.tankerkoenig.de',
+    'data': 'MTS-K',
+    'status': 'ok',
+    'station': {
+        'id': '24a381e3-0d72-416d-bfd8-b2f65f6e5802',
+        'name': 'Esso Tankstelle',
+        'brand': 'ESSO',
+        'street': 'HAUPTSTR. 7',
+        'houseNumber': ' ',
+        'postCode': 84152,
+        'place': 'MENGKOFEN',
+        'openingTimes': [{'text': 'Mo-Fr', 'start': '06:00:00',
+                         'end': '22:00:00'}, {'text': 'Samstag',
+                         'start': '07:00:00', 'end': '22:00:00'},
+                         {'text': 'Sonntag, Feiertag',
+                         'start': '08:00:00', 'end': '22:00:00'}],
+        'overrides': [],
+        'wholeDay': False,
+        'isOpen': True,
+        'e5': 1.009,
+        'e10': 1.009,
+        'diesel': 1.009,
+        'lat': 48.72210601,
+        'lng': 12.44438439,
+        'state': None,
+        },
+    }
+```
