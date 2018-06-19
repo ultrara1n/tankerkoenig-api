@@ -21,6 +21,16 @@ def getNearbyStations(apikey, latitude, longitude, radius, type, sort):
     #Fetch and return data
     return retrieveData(stationFullurl)
 
+def getPriceList(apikey, stationlist):
+    pricelistUrl = "https://creativecommons.tankerkoenig.de/json/prices.php?apikey=" + apikey + "&ids="
+
+    for station in stationlist:
+        pricelistUrl = pricelistUrl + station + ","
+
+    pricelistUrl = pricelistUrl[:-1]
+
+    return retrieveData(pricelistUrl)
+
 def retrieveData(url):
     # Fetch station details
     response = request.urlopen(url)
@@ -30,7 +40,7 @@ def retrieveData(url):
 
     #Check for error in response
     if responseJSON['ok'] == False:
-        raise customException(stationJSON['message'])
+        raise customException(responseJSON['message'])
 
     return responseJSON
 
