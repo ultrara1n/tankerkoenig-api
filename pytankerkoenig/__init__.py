@@ -16,7 +16,7 @@ def getStationData(apikey, station):
 def getNearbyStations(apikey, latitude, longitude, radius, type, sort):
     # Build the URL with apikey and station-id to fetch station details
     stationBaseurl = "https://creativecommons.tankerkoenig.de/json/list.php?lat="
-    stationFullurl = stationBaseurl + latitude + "&lng=" + longitude + "&rad=" + radius + "&sort=" + sort + "&type=" + type + "&apikey=" + apikey
+    stationFullurl = stationBaseurl + str(latitude) + "&lng=" + str(longitude) + "&rad=" + str(radius) + "&sort=" + sort + "&type=" + type + "&apikey=" + apikey
 
     #Fetch and return data
     return retrieveData(stationFullurl)

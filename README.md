@@ -71,3 +71,47 @@ $ pip install pytankerkoenig
         }},
     }
 ```
+
+### getNearbyStations(API_KEY, LATITUDE, LONGITUDE, RADIUS, TYPE, SORT)
+```python
+>>> import pytankerkoenig
+>>> data = pytankerkoenig.getNearbyStations('00000000-0000-0000-0000-000000000002','50.75','7.25','3','all','dist')
+>>> print(data)
+{
+  'ok': True,
+  'license': 'CC BY 4.0 -  https://creativecommons.tankerkoenig.de',
+  'data': 'MTS-K',
+  'status': 'ok',
+  'stations': [{
+    'id': '1bb14157-1242-41fc-a74a-4f916dea4634',
+    'name': 'Sankt Augustin Birlinghoven',
+    'brand': 'Mundorf Tank',
+    'street': 'Pleistalstraße',
+    'place': 'Sankt Augustin-Birlinghoven',
+    'lat': 50.748416,
+    'lng': 7.225838,
+    'dist': 1.7,
+    'diesel': 1.009,
+    'e5': 1.009,
+    'e10': 1.009,
+    'isOpen': False,
+    'houseNumber': '231',
+    'postCode': 53757
+  }, {
+    'id': 'd4a4644c-cd86-42a5-9cfa-ec6c58204312',
+    'name': 'Hennef-Geistingen',
+    'brand': 'Mundorf Tank',
+    'street': 'Stoßdorfer Straße',
+    'place': 'Hennef-Geistingen',
+    'lat': 50.773616,
+    'lng': 7.265088,
+    'dist': 2.8,
+    'diesel': 1.009,
+    'e5': 1.009,
+    'e10': 1.009,
+    'isOpen': True,
+    'houseNumber': '8a',
+    'postCode': 53773
+  }]
+}
+```
