@@ -9,6 +9,7 @@ setuptools.setup(
     author="Philipp Wensauer",
     author_email="mail@philippwensauer.com",
     description="Library for Tankerkoenig.de JSON API",
+    license="MIT",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/ultrara1n/tankerkoenig-api",
