@@ -1,11 +1,9 @@
 language: python
 python:
 - '2.7'
-- '3.2'
-- '3.3'
-- '3.4'
-- '3.5'
-- '3.6'
+- '3.7'
+- '3.8'
+- '3.9'
 - nightly
 script: python test.py
 deploy:
@@ -15,4 +13,4 @@ deploy:
     secure: hQiNPB1Jbw8p7M3fAhiwssiEQvRFpTwtqQXbPdf3X+iMZ0/wBZ4T8w0XXSv8wN/qg30ITQeChqifPfvMz37H4GaAolnlpgjZ1R+GRGifPIrY/z3ngPOU4tRIUjezXYSftOvjz/EsYCqxnKCCT4BQV4q/LDEibuBkibD6RHm72mjsf3tyNQ5m5xgwb7B7NftAADCLv+THtIJKpeNRurEfGHwFjHaorYlsaIkNmu79ludNKCyCLUQToD9JQYAglYp0m+fhc6n1aF8LDM1892tg9I7d6qzIutZdLB3/8TwWwua/agOO+qRX2nB0JPJln1MfQYSEKnMel5X8MooyWYhJOhPSzjYi9UbpDyH7j8CqXGuofQgnReBUJCn7V/2JNE29FScKbRD6cmCBctlJA/HJuHCx61duYMXfT1gjYU78TKHH9famEqyPrJ7S55CmV9jHf8pzxp7kA0UtDNHEO9svMkfBII0VHhMaUH6DxAZpNHrVwsM1dl+DHotXRprry8gzsfvuQLvNwCW84PvzTX5fUMbaxRpw3FiSHzvbz8z8OXgdp8y2sYxllynRGocyxg70Bm22KS6ahePVMwPoMmyjNdqT549F+kDmWlUHQOarCUS7+QWvxheiWhZ2L1iUe8XVJVf7xpKrrvHLdwZlv5sqUtpgmkIlyjJ0sQ8qEnQMvQ4=
   on:
     tags: true
-    python: 3.6
+    python: 3.9
